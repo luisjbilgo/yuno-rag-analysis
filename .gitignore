@@ -1,0 +1,17 @@
+# Entornos virtuales
+venv/
+__pycache__/
+*.pyc
+
+# Variables de Entorno (¡MUY IMPORTANTE!)
+.env
+
+# Datos pesados (Opcional: Si las imágenes pesan mucho, ignóralas)
+# yuno_data/images/
+# chroma_data/
+
+# Archivos de sistema
+.DS_Store
+
+# Logs
+*.log

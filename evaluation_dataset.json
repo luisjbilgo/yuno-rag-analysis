@@ -1,0 +1,42 @@
+[
+  {
+    "question": "What are the specific security requirements to authenticate with the Remote Yuno MCP Server?",
+    "ground_truth": "To authenticate, you need API key authentication requiring the YUNO_PUBLIC_API_KEY, YUNO_PRIVATE_SECRET_KEY, and YUNO_ACCOUNT_CODE. Additionally, sessions are bound to client IPs for validation."
+  },
+  {
+    "question": "How do I install the Yuno SDK for iOS using CocoaPods?",
+    "ground_truth": "To install the Yuno SDK for iOS using CocoaPods, add the line \"pod 'YunoSDK', '~> 1.19.0'\" to your Podfile and run the command \"pod install\"."
+  },
+  {
+    "question": "What are the three main steps of the Token Migration Process?",
+    "ground_truth": "1. The merchant requests the migration from their current processor. 2. Yuno and the provider import card data securely into the Yuno vault. 3. The merchant uses Yuno's token migration API to map tokens to 'vaulted_tokens'."
+  },
+  {
+    "question": "Explain how to initialize the Lite Web SDK with JavaScript.",
+    "ground_truth": "Create an instance of the Yuno class providing a valid PUBLIC_API_KEY: \"const yuno = await Yuno.initialize(PUBLIC_API_KEY);\"."
+  },
+  {
+    "question": "What parameters are required to configure the 'card' object in the Web SDK?",
+    "ground_truth": "The 'card' object requires: 'type' (step or extends), 'styles', 'cardSaveEnable', 'texts', and an 'onChange' callback function."
+  },
+  {
+    "question": "How does the refund process identify which transaction to reimburse?",
+    "ground_truth": "You need the payment 'id' and the 'transaction_id'. If captured in one step, get 'transaction_id' from 'transaction.id' in the create payment response. If captured separately, get it from the 'id' parameter of the capture response."
+  },
+  {
+    "question": "What is the purpose of the 'renderMode' parameter in the Lite SDK v2.0?",
+    "ground_truth": "It determines how payment forms are displayed, allowing embedding forms directly ('element') or showing them as a 'modal'."
+  },
+  {
+    "question": "In the iOS Seamless SDK, what does the 'keepLoader' configuration option do?",
+    "ground_truth": "If set to true, it requires the hideLoader() function to be called manually to hide the loader. It is false by default."
+  },
+  {
+    "question": "How can I enroll a card using a payment link if a customer's card is expired?",
+    "ground_truth": "Generate a payment link with 'customer_payer.id', 'one_time_use' set to true, and 'vault_on_success' set to true. Yuno generates a new 'vaulted_token' upon success."
+  },
+  {
+    "question": "What image example is shown for saving cards in the Web SDK?",
+    "ground_truth": "The documentation shows an image of a checkbox for saving or enrolling cards, enabled by setting cardSaveEnable: true."
+  }
+]

@@ -1,0 +1,4 @@
+is_persistent: true
+persist_directory: /home/ubuntu/chromadb-project/chroma_data
+allow_reset: true
+
