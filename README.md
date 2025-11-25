@@ -4,7 +4,7 @@
 ![RAGAS](https://img.shields.io/badge/AI-RAGAS_Evaluation-orange)
 ![Neo4j](https://img.shields.io/badge/DB-Neo4j_Graph-blue)
 ![ChromaDB](https://img.shields.io/badge/DB-Chroma_Vector-green)
-![Gemini](https://img.shields.io/badge/LLM-Gemini_1.5_Flash-purple)
+![Gemini](https://img.shields.io/badge/LLM-Gemini_2.5_Flash-purple)
 
 Este proyecto implementa y compara dos arquitecturas avanzadas de **Retrieval-Augmented Generation (RAG)** para responder preguntas técnicas sobre la documentación de la Fintech **Yuno**.
 
@@ -27,7 +27,7 @@ Se diseñaron dos flujos de recuperación paralelos para evaluar cuál paradigma
 | **Modelo de Datos** | Embeddings Densos (`intfloat/e5-base-v2`) | Grafo de Conocimiento (Nodos y Relaciones) |
 | **Enriquecimiento** | **Metadata Injection:** Inyección de *topics* dentro del chunk de texto. | **NLP Determinístico:** Extracción de entidades con `KeyBERT`. |
 | **Recuperación** | Similitud de Coseno (k=5). | Consulta Cypher basada en coincidencia de keywords. |
-| **Generación** | Gemini 1.5 Flash. | Gemini 1.5 Flash. |
+| **Generación** | Gemini 2.5 Flash. | Gemini 2.5 Flash. |
 
 ---
 
